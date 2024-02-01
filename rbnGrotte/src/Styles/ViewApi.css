@@ -16,25 +16,25 @@
     display: flex;
     gap: 10px;
   }
-  /* Style pour les images */
+  
   .card img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
   }
   
-  /* Style pour les titres */
+  
   .card h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
   
-  /* Style pour les prix */
+ 
   .card p strong {
-    color: #009688; /* Couleur du texte du prix */
+    color: #009688;
   }
   
-  /* Style pour les avis */
+  
   .card h3 {
     font-size: 18px;
   }
