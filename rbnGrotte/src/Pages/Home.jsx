@@ -7,22 +7,22 @@ function Home() {
         fetch("http://localhost:4875/cave/all").then(
             (res) => res.json()
         ).then((data)=> {
-            console.log(data);
-             setCaves(data);
+            console.log(data.grottes);
+             setCaves(data.grottes);
         })
     }, [])
     return (
     <div>
         <ul className="cave-list" id="cave-list">
-{caves.map((cave)=> (
-    <li key={cave.id} className="cave-item">
-<Link to={`/détails/${cave.id}`}>
-    <SelectionGrotte data={cave}/>
-            </Link>
-    </li>
-))}
-     </ul>
-<SelectionGrotte/>
+  {Array.isArray(caves) &&
+    caves.map((cave) => (
+      <li key={cave.id} className="cave-item">
+        <Link to={`/détails/${cave.id}`}>
+          <SelectionGrotte data={cave} />
+        </Link>
+      </li>
+    ))}
+</ul>
     </div>
 )
 }
