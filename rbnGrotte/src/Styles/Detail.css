@@ -1,0 +1,15 @@
+.detailImage {
+    flex-wrap: wrap;
+    height: 560px;
+}
+
+  .mainPhoto {
+    width: 560px;
+    height: 500px;
+  }
+  
+  .secondaryPhoto {
+    width: 270px;
+    height: 250px;
+  }
+  
