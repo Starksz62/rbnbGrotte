@@ -1,5 +1,5 @@
 // import Detail from "./Pages/Detail"
-import ViewApi from "./Components/ViewApi"
+import DetailCard from "./Components/DetailCard"
 
 function App() {
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     {/* <Detail /> */}
-    <ViewApi />
+    <DetailCard />
     </>
   )
 }

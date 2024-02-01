@@ -9,7 +9,7 @@ function Detail() {
     fetch(`http://localhost:4875/cave/all`)
       .then((response) => response.json())
       .then((data) => {
-        console.info(data);
+        // console.info(data);
         setDetails(data);
       })
       .catch((err) => {
@@ -18,25 +18,27 @@ function Detail() {
   }, []);
 
   // Si details[0] est undefined, on ne rend rien
-  if (!details[0]) {
-    return null;
-  }
+//   if (!details[0]) {
+//     return null;
+//   }
 
-  const item = details[0];
+  const item = details;
 
-  // Fonction pour remplacer les images manquantes par une image interne
-  const replaceMissingImages = (photos) => {
-    const numberOfImages = 3;
+console.log(item)
 
-    while (photos.length < numberOfImages) {
-      photos.push(noImg);
-    }
+//   // Fonction pour remplacer les images manquantes par une image interne
+//   const replaceMissingImages = (photos) => {
+//     const numberOfImages = 3;
 
-    return photos;
-  };
+//     while (photos.length < numberOfImages) {
+//       photos.push(noImg);
+//     }
 
-  // Remplacez les images manquantes
-  const imagesFull = replaceMissingImages(item.photos);
+//     return photos;
+//   };
+
+//   // Remplacez les images manquantes
+//   const imagesFull = replaceMissingImages(item.photos);
 
   return (
     <div>
