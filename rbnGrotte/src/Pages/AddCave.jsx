@@ -1,4 +1,7 @@
-function AddCave () {
-    <div></div>
+function AddCave() {
+  return(
+    <>
+    </>
+  )
 }
 export default AddCave;
