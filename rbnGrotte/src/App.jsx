@@ -1,12 +1,11 @@
-import ViewApi from "./Components/ViewApi"
 import Footer from "./Components/Footer"
 import { Outlet } from "react-router-dom"
 import Navbar from './Components/Navbar'
 
+
 function App() {
   return (
     <>
-    <ViewApi />
     <main>
       <Navbar />
       <Outlet />
