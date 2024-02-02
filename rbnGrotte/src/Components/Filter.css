@@ -14,9 +14,9 @@
   display: flex;
   flex-direction: column;
   background-color: #F9F0DD;
+  align-items: center;
 }
 
 .titleImg {
-  margin: 0;
-  text-align: center;
+  margin: 5px 0 0 0;
 }
