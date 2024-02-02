@@ -10,7 +10,7 @@ function SelectionGrotte({ data }) {
   return (
     <div className="card">
       <div className="container-favori-title">
-      <h2>{data.nom}</h2>
+      <h2 className="daleked">{data.nom}</h2>
       <span
         className={`etoile-favori ${estFavori ? "active" : ""}`}
         onClick={() => setEstFavori(!estFavori)}
