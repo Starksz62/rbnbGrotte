@@ -11,10 +11,18 @@ function Details() {
 
   useEffect(() => {
     fetch(`http://localhost:4875/cave/${id}`)
-      .then((res) => res.json())
+      .then((res) => {
+        if (!res.ok) { // Vérifie si la réponse est ok (status 200-299)
+          throw new Error(`Erreur HTTP! statut: ${res.status}`);
+        }
+        return res.json(); // Tente de parser la réponse en JSON
+      })
       .then((data) => {
-        console.log(data);
-        setCave(data);
+        setCave(data); // Met à jour l'état avec les données récupérées
+      })
+      .catch((error) => {
+        console.error("Erreur lors de la récupération des données de la cave:", error);
+        // Ici, vous pourriez définir un état d'erreur et l'afficher à l'utilisateur, si souhaité
       });
   }, [id]);
 
@@ -48,11 +56,11 @@ function Details() {
     <div>
       {cave ? (
         <div>
-          <p>{cave.nom}</p>
+          <p id="title">{cave.nom}</p>
           <div className="photo-details">
             <div className="principal-information">
               {cave.images && cave.images.principale && (
-                <img src={cave.images.principale} alt="Photo principale" />
+                <img src={cave.images.principale} alt="Photo principale" className="principal-image" />
               )}
             </div>
             {cave.images &&
@@ -60,6 +68,7 @@ function Details() {
               cave.images.secondaire.length > 0 && (
                 <div>
                   <div className="secondary-images-container">
+                    
                     {cave.images.secondaire.map((image, index) => (
                       <img
                         key={index}

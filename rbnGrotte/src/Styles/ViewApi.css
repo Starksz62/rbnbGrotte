@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    /* background-image: url('../assets/background3.webp'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .card-container {
   display: flex;
   flex-wrap: wrap;

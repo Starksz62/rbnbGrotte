@@ -1,0 +1,63 @@
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 50, 0, 0.7); /* Utilisation de rgba pour définir la transparence */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer-area{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.about-us {
+    text-align: center;
+    font-weight: bold; 
+}
+
+.about-us-button {
+  border-radius: 5px;
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation; 
+}
+
+.about-us-button:hover {
+    background-color: #FFC229;
+    box-shadow: #FF6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+.about-us-button:active {
+    transform: scale(1.025);
+}
+
+.footer a, .footer p {
+    color: white; /* Couleur du texte dans le footer */
+    text-decoration: none;
+    margin: 5px;
+  }
