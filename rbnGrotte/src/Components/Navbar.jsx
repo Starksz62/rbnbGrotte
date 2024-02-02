@@ -12,7 +12,6 @@ function Navbar() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'blue',
     transition: 'background-color 0.3s',
   });
 
@@ -40,9 +39,6 @@ function Navbar() {
           <ul>
             <li>
               <Link to="/">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/détails">Détails</Link>
             </li>
             <li>
               <Link to="/favoris">Favoris</Link>

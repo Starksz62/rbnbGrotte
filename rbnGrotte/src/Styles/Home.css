@@ -1,0 +1,8 @@
+ .cave-item{
+    display: contents;
+    list-style: none;
+}
+.cave-list{
+    display: flex;
+    flex-direction: row;
+}

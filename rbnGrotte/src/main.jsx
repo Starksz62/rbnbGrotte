@@ -2,7 +2,7 @@
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Home from './Pages/Home.jsx'
-import Détails  from './Pages/Détails.jsx';
+import Details  from './Pages/Details.jsx';
 import Favoris from './Pages/Favoris.jsx';
 import AddCave from './Pages/AddCave.jsx';
 import App from './App.jsx'
@@ -17,8 +17,8 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path:"/détails",
-        element:<Détails/>
+        path:"/details/:id",
+        element:<Details/>
       },
       {
         path:"/favoris",
