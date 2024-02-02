@@ -1,0 +1,16 @@
+/* Favoris.css */
+
+.star {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.star:before {
+  content: "\2606"; /* Code Unicode pour un cœur vide */
+}
+
+.star.filled:before {
+  content: "\2605"; /* Code Unicode pour un cœur rempli */
+  color: red;
+  font-size: 20px;
+}

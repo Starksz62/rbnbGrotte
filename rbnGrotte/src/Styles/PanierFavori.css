@@ -1,0 +1,9 @@
+.panier-favori {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.count {
+  margin-left: 5px;
+}
