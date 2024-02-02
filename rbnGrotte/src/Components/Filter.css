@@ -1,17 +1,19 @@
 .filtreLogo {
   display: flex;
+  justify-content: center;
 }
 
 .imgFiltre {
   width: 100px;
+  background-color: white;
+  border-radius: 50px;
 }
 
 .buttonImg {
   border: 0;
-  background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #F7F7F7;
 }
 
 .titleImg {

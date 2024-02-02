@@ -1,0 +1,54 @@
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.panier-favoris {
+  display: flex;
+  justify-content: center;
+  margin-right: 25px;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.circle img {
+  width: 20px;
+  height: 20px;
+}
+
+.circle:hover {
+  background-color: red;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
