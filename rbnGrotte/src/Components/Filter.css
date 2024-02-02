@@ -1,0 +1,20 @@
+.filtreLogo {
+  display: flex;
+}
+
+.imgFiltre {
+  width: 100px;
+}
+
+.buttonImg {
+  border: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleImg {
+  margin: 0;
+  text-align: center;
+}
