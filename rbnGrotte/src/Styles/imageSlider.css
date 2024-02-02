@@ -1,0 +1,36 @@
+
+.thumbnail-images {
+    max-width: 100%;
+    max-height: 300px; 
+    margin: 0 auto;
+  }
+ 
+  .thumbnail-images .slick-slide {
+    text-align: center;
+  }
+  
+  .thumbnail-images .slick-slide img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    object-fit: contain; 
+    margin-bottom: 10px;
+  }
+
+  .thumbnail-images .slick-dots {
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail-images .slick-dots li {
+    display: inline-block;
+    margin: 0 5px; 
+  }
+  
+ 
+  .thumbnail-images .slick-dots li.slick-active button:before {
+    color: #007bff; 
+  }
+  
+ 
