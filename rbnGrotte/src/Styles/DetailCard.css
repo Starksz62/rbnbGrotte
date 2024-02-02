@@ -1,51 +1,60 @@
 .card-container {
-    background-color: #F9F0DD;
-    height: 100vh;
-    /* justify-content: space-between;  */
-  }
-  
-  .card {
-    border-radius: 50px;
-    padding: 20px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .images-container {
-    display: flex;
-    gap: 10px;
-    width: calc(33.33% - 20px); 
-  }
-  
-  .card img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  
-  .card h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
- 
-  .card p strong {
-    color: #009688;
-  }
-  
-  
-  .card h3 {
-    font-size: 18px;
-  }
-  
-  .card ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .card li {
-    margin-bottom: 5px;
-  }
-  
+  background-color: #F9F0DD;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ajustez selon vos besoins */
+}
+
+.card {
+  border-radius: 50px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 46%; /* Ajustez la largeur selon vos besoins */
+}
+
+.images-container {
+  display: flex;
+  flex-direction: row; /* Pour empiler les images verticalement */
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.card img {
+  border-radius: 8px;
+  width: 100%; /* Ajustez selon vos besoins */
+  object-fit: cover;
+}
+
+.card img.mainPhoto {
+  height: 200px; /* Hauteur fixe pour l'image principale */
+}
+
+.secondary-images-container {
+  width: 50%;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p strong {
+  color: #009688;
+}
+
+.card h3 {
+  font-size: 18px;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
