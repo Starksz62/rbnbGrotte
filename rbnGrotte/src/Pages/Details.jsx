@@ -56,7 +56,7 @@ function Details() {
     <div>
       {cave ? (
         <div>
-          <p id="title">{cave.nom}</p>
+          <p className="daleked" id="title">{cave.nom}</p>
           <div className="photo-details">
             <div className="principal-information">
               {cave.images && cave.images.principale && (
@@ -116,7 +116,7 @@ function Details() {
       <div className="container-information">
         {cave && cave.avis && cave.avis.length > 0 && (
           <div className="avis-user">
-            <h3>Avis des utilisateurs :</h3>
+            <h3 className="daleked">Avis des utilisateurs :</h3>
             <ul>
               {cave.avis.map((avis, index) => (
                 <li key={index}>
