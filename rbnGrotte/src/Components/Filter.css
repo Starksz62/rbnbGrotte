@@ -1,0 +1,22 @@
+.filtreLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.imgFiltre {
+  width: 80px;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.buttonImg {
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #F7F7F7;
+}
+
+.titleImg {
+  margin: 0;
+  text-align: center;
+}
