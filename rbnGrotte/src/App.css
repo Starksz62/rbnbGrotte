@@ -1,17 +1,31 @@
-:root {
+@font-face {
+  font-family: 'Dalek';
+  src: url('./src/assets/DALEK___.ttf') format('truetype');
+}
+
+/* :root {
   line-height: 2;
   background-repeat: no-repeat;
   font-synthesis: none;
-  font-family: sans-serif;
+  font-family: 'Dalek';
   font-weight: 400;
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   font-synthesis: none;
-  font-family: sans-serif;
+
+}
+
+* {
+  font-family: 'Dalek';
 }
 main {
   height: 100vh;
 }
 main > div {
   height: 100%;
+} */
+
+.daleked {
+  font-family:'Dalek';
 }
+
