@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 import "./Filter.css"
 
 import PictoHutte from "../assets/PictoTente.png";
