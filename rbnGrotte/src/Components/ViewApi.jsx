@@ -27,7 +27,7 @@ function ViewApi() {
               <p><strong>Prix :</strong> {grotte.prix.valeur} {grotte.prix.modeDePaiement}</p>
               <p>{grotte.description}</p>
               <div className="images-container">
-                <img src={grotte.images.principale} alt="Photo principale" />
+                <img className="main-image" src={grotte.images.principale} alt="Photo principale" />
                 {grotte.images.secondaire ? (
                   <div className="secondary-images-container">
                     {grotte.images.secondaire.map((image, index) => (
@@ -41,7 +41,7 @@ function ViewApi() {
               <h3>Avis des utilisateurs :</h3>
               <ul>
                 {grotte.avis.map((avis, index) => (
-                  <li key={index}>
+                  <li className='comment' key={index}>
                     <strong>Utilisateur :</strong> {avis.utilisateur}<br />
                     <strong>Note :</strong> {avis.note}<br />
                     <strong>Commentaire :</strong> {avis.commentaire}

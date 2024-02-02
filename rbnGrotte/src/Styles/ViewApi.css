@@ -1,20 +1,42 @@
+body {
+    margin: 0;
+    background-color: bisque;
+    /* background-image: url('../assets/background3.webp'); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .card-container {
+    color:antiquewhite;
+    margin-left: 6vh;
+    margin-right: 2vh;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between;  */
+    justify-content: space-between; 
   }
   
   .card {
-    background-color: #7a6036;
+    background-color: #392607;
     border-radius: 50px;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 10px; /* Réduisez la valeur de padding pour réduire la taille de la carte */
     margin: 10px;
-    width: calc(33.33% - 20px); 
+    width: calc(30.33% - 0rem); 
+    height: 70vh;
   }
+
   .images-container {
+    width: 50vh;
+    height: 48%;
+    margin-bottom: 80px;
     display: flex;
     gap: 10px;
+  }
+
+  .secondary-images-container img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 10px; /* Ajoutez une marge droite de 10px entre les images */
   }
   
   .card img {
@@ -25,7 +47,8 @@
   
   
   .card h2 {
-    font-size: 24px;
+    color: bisque;
+    font-size: 35px;
     margin-bottom: 10px;
   }
   
@@ -36,7 +59,8 @@
   
   
   .card h3 {
-    font-size: 18px;
+    font-size: 30px;
+    color: #009688;
   }
   
   .card ul {
@@ -46,5 +70,9 @@
   
   .card li {
     margin-bottom: 5px;
+  }
+ 
+  .comment {
+    color: antiquewhite;
   }
   
