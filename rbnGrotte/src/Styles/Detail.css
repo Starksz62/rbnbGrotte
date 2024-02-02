@@ -2,7 +2,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: wheat;
+    background-color: #F9F0DD;
     color: #484848;
   }
 
@@ -19,15 +19,15 @@ body, html {
   }
   
   .photo-details {
-    background-color: #624108;
+    background-color: #E8D4AF;
     border-radius: 50px;
-    border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     display: flex;
     align-items: center; 
     justify-content: center;
     margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
   .principal-information img {
